@@ -1,0 +1,52 @@
+<div class="content">
+    <div class="col-md-12">
+    <div class="card">
+       <div class="card-header">
+           <h5 class="title">Ürün Ekle</h5>
+           <div class="card-body">
+            <form [formGroup]="productAddForm">
+                <div class="mb-3">
+                    <label for="urunAd">Ürün Adı</label>
+                    <div class="form-group">
+                        <input type="text" id="urunAd" formControlName="urunAd" class="form-control" placeholder="Ürün adı"/>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="kategoriId">Kategori Id</label>
+                    <div class="form-group">
+                        <input type="text" id="kategoriId" formControlName="kategoriId" class="form-control" placeholder="kategoriId"/>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="urunMarka">Ürün Marka</label>
+                    <div class="form-group">
+                       <input type="text" id="urunMarka" formControlName="urunMarka" class="form-control" placeholder="Ürün marka"/>
+                   </div>
+                </div>
+                <div class="mb-3">
+                    <label for="urunStok">Ürün Stok</label>
+                    <div class="form-group">
+                        <input type="text" id="urunStok" formControlName="urunStok" class="form-control" placeholder="Ürün Stok"/>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="urunStok">Alıs Fiyat</label>
+                    <div class="form-group">
+                        <input type="text" id="alısFiyat" formControlName="alısFiyat" class="form-control" placeholder="alısFiyat"/>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="urunStok">SatısFiyat</label>
+                    <div class="form-group">
+                        <input type="text" id="satısFiyat" formControlName="satısFiyat" class="form-control" placeholder="satısFiyat"/>
+                    </div>
+                </div>
+            </form>
+           </div>
+         </div>
+       </div>   
+       <div class="card-footer">
+        <button class="btn btn-warning" (click)="add()">Ürün Ekle</button>
+       </div> 
+    </div>
+</div>
